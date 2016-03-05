@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang = "en">
+<head>
+	<title>Movie Survey</title>
+</head>
+<style>
+#outercontainer{
+	width: 800px;
+	background-color: lightsteelblue;
+	border-radius: 22px;
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+
+}
+h1 {
+	font-size: 40pt;
+	text-align: center;
+	font-size: 50px;
+}
+.label{
+	width: 120px;
+	background-color: red;
+	float:left;
+	text-align: right;
+	padding-right:12px;
+
+}
+.small{
+	width: 60px;
+}
+.large{
+	width: 600px;
+}
+.b {
+	border-radius: 9px;
+	background-color: yellow;
+	color: green;
+}
+.b:hover{
+	background-color:pink;
+}
+</style>
+
+<body>
+	<div id= "outercontainer"> 
+		<h1>Film Survey</h1>
+		<hr/>
+		<form action="http://www.usc.edu/cgi-bin/mail_form/kdieu@usc.edu">
+			<div class= "label">Name: </div>
+				<input type= "text" name="fullname" value="Kevin Dieu"/><br/>
+			<div class= "label">Age:</div>
+				<input type= "text" class= "small" name="age" maxlength="2" value="18"/><br/>
+			<div class= "label">Email:</div> 
+				<input type = "text" name="email" value="___@gmail.com"/><br/>
+			<br/> <br/>
+
+			<div class= "label">Like movies? </div>
+				<input type= "checkbox" name="likemovies">Yes
+			<br/>
+
+			<div class="label">Fav Genre </div>
+				<input type= "radio" name="genre" value="action">Action 
+				<input type= "radio" name= "genre" value="comedy">Comedy 
+				<input type= "radio" name="genre" value="romance" selected="1">Romance
+			<br/><br/>
+			<div class="label">Fav Actor</div>
+				<select name="favactor">
+					<option>Decaprio</option>
+					<option>Hardy</option>
+					<option selected="1">Damon</option>
+					<option>Redford</option>
+				</select>
+			<br/><br/>
+
+			<div class="label">Film Story:</div>
+				<textarea name="filmstory" class="large"></textarea>
+			<br/> <br/>
+			<input type="submit" class ="b" value="Submit Survey"/>
+			<input type="reset" class = "b" value="Start Over"/>
+			<input class="small" type="image" src="button.gif"/>
+		</form>
+	</div><!--close outercontainer-->
+</body>

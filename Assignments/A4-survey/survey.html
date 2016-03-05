@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang = "en">
+<head>
+	<title>Survey</title>
+</head>
+<style>
+#outercontainer{
+	width: 800px;
+	background-color: darkslategrey;
+	border-radius: 22px;
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	font-family: verdana;
+	opacity: 0.9;
+	color: white;
+}
+#outercontainer:hover{
+	opacity: 1;
+}
+#logo {
+	height: 150px;
+	width: 150px;
+	background-color: #00CCCC;
+	border-radius: 9px;
+}
+#intro {
+	font-size: 12pt;
+	text-align: center;
+	font-family: tahoma;
+}
+h1 {
+	width: 600px;
+	font-size: 35pt;
+	font-style: italic;
+	text-align: center;
+	background-color: #00CCCC;
+	border-radius: 9px;
+	color: black;
+	font-family: impact;
+}
+body {
+	background-image: url(survey_images/background.jpg);
+	background-size: 100% 100%;
+}
+.header{
+	font-size: 18pt;
+	border-radius: 9px;
+	background-color: #00CCCC;
+	width: 700px;
+	text-align: center;
+	margin-bottom: 15px;
+	color: black;
+
+}
+.label{
+	width: 120px;
+	float:left;
+	text-align: right;
+	padding-right: 12px;
+
+}
+.small{
+	width: 60px;
+}
+.large{
+	width: 600px;
+	height: 100px;
+}
+.b {
+	width: 150px;
+	height: 50px;
+	border-radius: 9px;
+	background-color: yellow;
+	color: black;
+	font-family: arial;
+	font-size: 15pt;
+}
+.b:hover{
+	background-color:lightgreen;
+}
+
+</style>
+
+<body>
+	<div id= "outercontainer">
+			<center><img id="logo" src="survey_images/wwf.png"/></center> 
+			<center><h1>World Wildlife Fund Survey</h1></center>
+			<div id="intro"><em>We protect wildlife and nature because they inspire us. Thanks to donations from supporters like you, WWF has made a huge difference for wildlife and wild places for more than 50 years. But our work is far from over.</em></div>
+			<hr/>
+		<form action="http://www.usc.edu/cgi-bin/mail_form/kdieu@usc.edu">
+			<center><div class="header">Billing Information</div></center>
+			<div class= "label">Name: </div>
+				<input type= "text" name="fullname" value="ex: Kevin Dieu"/><br/>
+			<div class= "label">Age:</div>
+				<input type= "text" class= "small" name="age" maxlength="2"/><br/>
+			<div class= "label">Email:</div> 
+				<input type = "text" name="email" value="___@gmail.com"/><br/>
+			<div class= "label">Address:</div>
+				<input type= "text" name="street address" value="ex: 2855 Senter Rd. Spc. #9"/><br/>
+			<div class= "label">City:</div>
+				<input type= "text" name="city" value="ex: San Jose, CA"/><br/>
+			<div class= "label">Zip Code: </div>
+				<input type= "text" name="zip code" value="ex: 95111" maxlength="5"/><br/>
+			<hr/>
+			<center><div class="header">Causes</div></center>
+			<div class="label">Causes you care about? </div>
+				<input type= "checkbox" name="cause" value="Wildlife Preservation"> Wildlife Preservation
+				<input type= "checkbox" name= "cause" value="Oceans">Oceans 
+				<input type= "checkbox" name="cause" value="food">Food
+				<input type="checkbox" name="cause" value="Climate">Climate
+				<input type="checkbox" name= "cause" value="Forests">Forests <br/> <br/> <br/>
+			<div class= "label"> Your Story</div>
+				<textarea name="story" class="large"></textarea> <br/>
+			<hr/>
+			<center><div class="header">Donation</div></center>
+			<div class= "label">Donate? </div>
+				<input type= "radio" name="donate" value="yes">Yes
+				<input type= "radio" name="donate" value="no">No <br/> <br/>
+			<div class="label">Donation Amount:</div>
+				<select name="donation amount">
+					<option>$25</option>
+					<option>$50</option>
+					<option selected="1">$75</option>
+					<option>$100</option>
+					<option>$150</option>
+					<option>$200</option>
+					<option>$500</option>
+					<option>other</option>
+				</select> <br/> <br/> <br/>
+			<div class="label"> If other: </div>
+				<input type="text" class="small" value="ex: $8"><br/>
+			<hr/>
+
+			<div class="label">Anything you want to tell us?:</div>
+				<textarea name="misc" class="large"></textarea>
+			<br/> <br/>
+			<hr/>
+			<center><input type="submit" class ="b" value="Submit Survey"/>
+			<input type="reset" class = "b" value="Start Over"/><center>
+		</form>
+	</div><!--close outercontainer-->
+</body>
