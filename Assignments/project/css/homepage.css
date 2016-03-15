@@ -1,0 +1,155 @@
+body{
+	background-image:url('../img/bg.jpg');
+	background-size:cover;
+}
+.bgvideo {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index: -5;
+}
+#nav{
+	position: fixed;
+	z-index: 1;
+	min-width: 10%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	background-color: white;
+	text-align: center;
+}
+#logo{
+	margin-top: 40px;
+	width: 250px;
+}
+.navlink {
+	display: block;
+	width: 170px; /* Note that width AND height are not working to start */
+	height: 40px; /* because normally an achor is NOT a "block" element like div  */
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	background-color: white;
+	color: #3f3f3f;
+	text-align: center;
+	text-decoration: none;
+	font-family: helvetica;	
+	line-height: 22px;
+	border: 3px solid #3f3f3f;
+	border-radius: 8px;
+	font-size: 12pt;
+	padding-top: 15px;
+}
+
+.navlink:hover {
+	background-color: #bcf9ff;
+	font-size: 13pt;	
+}
+#adjust{
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+#intro{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 10%;
+	margin-left: 40%;
+	width: 500px;
+	height: 250px;
+	background-color: white;
+	z-index: -1;
+	position: fixed;
+	text-align: center;
+	font-family: helvetica;
+	color: #2f2f2f;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+#logo2{
+	margin: auto;
+	width: 180px;
+}
+#title2{
+	font-size: 30pt;
+}
+.bodybox{
+	margin-left: 19%;
+	width: 82%;
+	z-index: 1;
+	background-color: black;
+	font-family: verdana;
+	color: white;
+	text-align: center;
+}
+#quote{
+	position: fixed;
+	top: 70%;
+	padding-top: 30px;
+	text-align: center;
+	height: 70px;
+	font-size: 18pt;
+	z-index: -1;
+	opacity: 0.7;
+}
+#quote1{
+	opacity: 1;
+	font-color: white;
+}
+#about{
+	margin-top: 40%;
+	z-index: 1;
+	height: 600px;
+}
+#arrow{
+	margin-top: 40px;
+	width: 40px;
+}
+#title3{
+	margin-top: 20px;
+	font-size: 17pt;
+}
+.imagewrap{
+	margin-left: 20%;
+	position: relative;
+	height: 400px;
+	width: 640px;
+	text-align: center;
+	color: white;
+	font-family: helvetica;
+	font-size: 12pt;
+	display: block;
+}
+.imgdsc{
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	background-color: black;
+	font-size: 15pt;
+	width: 600px;
+}
+.imagewrap:hover .imgdsc{
+	display: block;
+	opacity: 0.8;
+}
+#sjsu{
+	height: 400px;
+	width: 639px;
+}
+p.double{
+	line-height: 30px;
+}
